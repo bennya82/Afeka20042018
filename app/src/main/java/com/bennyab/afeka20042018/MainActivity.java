@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         String txt2 =  prefs.getString(DATA2,"");
         et1.setText(txt1);
         et2.setText(txt2);
+
+        //change...
     }
 
 
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         String txt2 = et2.getText().toString();
 
         SharedPreferences prefs = getSharedPreferences(PREFS_NAME,Context.MODE_PRIVATE);
+
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString(DATA1,txt1);
         editor.putString(DATA2,txt2);
